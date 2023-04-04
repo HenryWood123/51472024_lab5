@@ -12,30 +12,7 @@ db = firestore.client()
 app = Flask(__name__)
 @functions_framework.http
 
-#
-# @app.route('/', methods = ['Post', 'DELETE', 'PUT', 'GET', 'PATCH'])
-# def index(request):
-#     if request.method == 'POST' and request.path == '/voter':
-#         return new_voter(request)
-#     elif request.method == 'DELETE' and request.path == '/voter':
-#         return deregister_student(request)
-#     elif request.method == 'PUT' and request.path == '/voter':
-#         return update_student(request)
-#     elif request.method == 'GET' and request.path == '/voter':
-#         return retrieve_student(request)
-#
-#     elif request.method == 'POST' and request.path == '/election':
-#         return create_election(request)
-#     elif request.method == 'DELETE' and request.path == '/election':
-#         return delete_election(request)
-#     elif request.method == 'PUT' and request.path == '/election':
-#         return update_election(request)
-#     elif request.method == 'GET' and request.path == '/election':
-#         return view_election(request)
-#
-#     elif request.method == 'POST' and request.path == '/cast_vote':
-#         return cast_vote(request)
-#
+
 
 @app.route('/')
 def index():
